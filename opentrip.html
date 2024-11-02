@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentera Pendaki Trip</title>
+    <link rel="icon" type="image/x-icon" href="images/logo lentera pendaki trip.jpg">
+    <style>
+        /* CSS Introduction */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* CSS Syntax and Selectors */
+        h1 {
+            color: #ff6b00;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #666;
+            text-align: center;
+        }
+
+        /* ID Selector */
+        #footer {
+            background-color: #ff6b00;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* CSS Colors */
+        p {
+            color: rgb(34, 34, 34);
+        }
+
+        /* CSS Background */
+        .trip-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* CSS Borders */
+        .trip-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        /* CSS Margins and Padding */
+        .trip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .trip-type {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ff6b00;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            border-radius: 5px;
+        }
+
+        .private .trip-type {
+            background-color: #ffbb00;
+        }
+
+        .trip-card h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .trip-date, .trip-location, .trip-price {
+            margin-bottom: 5px;
+        }
+
+        .trip-date {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .trip-location {
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        .trip-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ff6b00;
+        }
+
+        /* CSS Height/Width */
+        .trip-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* CSS Comments */
+        /* Ini adalah contoh komentar dalam CSS */
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Selamat Datang di Lentera Pendaki Trip</h1>
+        <p>Jelajahi alam bebas dan temukan petualangan baru bersama kami!</p>
+    </header>
+
+    <section class="trip-container">
+        <div class="trip-card">
+            <span class="trip-type">Open Trip</span>
+            <img src="images/gunung lawu.jpg" alt="Lawu" class="trip-image">
+            <h2>Gunung Lawu</h2>
+            <p class="trip-date">22 - 24 November 2024 • 2 Hari 1 Malam</p>
+            <p class="trip-location">Jawa Tengah</p>
+            <p class="trip-price">Rp 1.100.000</p>
+        </div>
+
+        <div class="trip-card">
+            <span class="trip-type">Open Trip</span>
+            <img src="images/Pangrango,_West_Java.jpg" alt="Gunung Gede Pangrango" class="trip-image">
+            <h2>Gunung Gede Pangrango</h2>
+            <p class="trip-date">22 - 25 Desember 2024 • 3 Hari 2 Malam</p>
+            <p class="trip-location">Jawa Barat</p>
+            <p class="trip-price">Rp 900.000</p>
+        </div>
+
+        <div class="trip-card">
+            <span class="trip-type">Open Trip</span>
+            <img src="images/sindoro mountain.jpg" alt="Sindoro" class="trip-image">
+            <h2>Gunung Sindoro</h2>
+            <p class="trip-date">19 - 21 Januari 2025 • 2 Hari 1 Malam</p>
+            <p class="trip-location">Jawa Tengah</p>
+            <p class="trip-price">Rp 1.300.000</p>
+        </div>
+
+        <div class="trip-card">
+            <span class="trip-type">Open Trip</span>
+            <img src="images/merbabu mountain.jpg" alt="Merbabu" class="trip-image">
+            <h2>Gunung Merbabu</h2>
+            <p class="trip-date">12 - 15 Desember 2024 • 3 Hari 2 Malam</p>
+            <p class="trip-location">Jawa Tengah</p>
+            <p class="trip-price">Rp 1.250.000</p>
+        </div>
+
+        <div class="trip-card">
+            <span class="trip-type">Open Trip</span>
+            <img src="images/Gunung Sumbing.jpg" alt="Sumbing" class="trip-image">
+            <h2>Gunung Sumbing</h2>
+            <p class="trip-date">30 - 1 Januari 2025 • 2 Hari 1 Malam</p>
+            <p class="trip-location">Nusa Tenggara Barat</p>
+            <p class="trip-price">Rp 1.100.000</p>
+        </div>
+    
+
+        <div class="trip-card private">
+            <span class="trip-type">Private Tur</span>
+            <img src="images/semeru.jpg" alt="Semeru" class="trip-image">
+            <h2>Gunung Semeru</h2>
+            <p class="trip-date">10 - 16 November 2024 • 5 Hari 4 Malam</p>
+            <p class="trip-location">Jawa Timur</p>
+            <p class="trip-price">Rp 3.500.000</p>
+        </div>
+
+        <div class="trip-card private">
+            <span class="trip-type">Private Tur</span>
+            <img src="images/gunung jaya wijaya.jpg" alt="Jaya Wijaya" class="trip-image">
+            <h2>Gunung Jaya Wijaya</h2>
+            <p class="trip-date">17 Agustus - 24 Agustus 2025 • 12 Hari</p>
+            <p class="trip-location">Papua</p>
+            <p class="trip-price">Rp 115.000.000</p>
+        </div>
+
+        <div class="trip-card private">
+            <span class="trip-type">Private Tur</span>
+            <img src="images/rinjani.jpg" alt="Rinjani" class="trip-image">
+            <h2>Gunung Rinjani</h2>
+            <p class="trip-date">5 - 8 Desember 2024 • 3 Hari 2 Malam</p>
+            <p class="trip-location">Nusa Tenggara Barat</p>
+            <p class="trip-price">Rp 2.500.000</p>
+        </div>
+
+        <div class="trip-card private">
+            <span class="trip-type">Private Tur</span>
+            <img src="images/gunung kerinci.jpg" alt="Kerinci" class="trip-image">
+            <h2>Gunung Kerinci</h2>
+            <p class="trip-date">23 - 28 Desember 2024 • 5 Hari 4 Malam</p>
+            <p class="trip-location">Sumatera Barat</p>
+            <p class="trip-price">Rp 3.200.000</p>
+        </div>
+
+        <div class="trip-card private">
+            <span class="trip-type">Private Tur</span>
+            <img src="images/gunung latimojong.jpg" alt="Latimojong" class="trip-image">
+            <h2>Gunung Latimojong</h2>
+            <p class="trip-date">24 - 27 November 2025 • 3 Hari 2 Malam</p>
+            <p class="trip-location">Sulawesi Selatan</p>
+            <p class="trip-price">Rp 2.600.000</p>
+        </div>
+    </section>
+
+    <div id="footer">
+        <p>© 2024 Lentera Pendaki Trip. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
